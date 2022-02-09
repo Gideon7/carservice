@@ -125,7 +125,7 @@ public class CarRestController {
 						  @Content(array = @ArraySchema(schema = @Schema(implementation = ResponseDTO.class)))}), 
 		  @ApiResponse(responseCode = "500", description = "Internal Server Error", 
 		  		  content = {@Content(schema = @Schema(implementation = ResponseDTO.class))})})
-	  public ResponseEntity<?> filterAllCars(@RequestParam String param, @RequestParam String order) {
+	  public ResponseEntity<?> filterAllCars(@RequestParam @Parameter(description = "color/brand/vin/year") String param, @RequestParam String order) {
 	    log.info("API Call To Fetch All Cars");
 	    try {
 	       ResponseDTO retValue = carService.filterCarsByParam(param, order);
