@@ -5,13 +5,13 @@ This is a Car Service containing API's to filter, fetch and adding a new car mod
 
 This service comes with the following installed dependencies: 
 
-springboot-starter-webflux
-springdoc-open-api
-lombok
-google-gson
-springboot-starter-actuator
-springboot-starter-web
-springboot-devtools
+1. springboot-starter-webflux
+2. springdoc-open-api
+3. lombok
+4. google-gson
+5. springboot-starter-actuator
+6. springboot-starter-web
+7. springboot-devtools
 
 # Run
 The following describes how to run and test service rest apis:
