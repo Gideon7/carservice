@@ -36,7 +36,11 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 	            @Server( 
 	 	               url="http://localhost:8080/carservice",
 	 	               description="local"
-	 	            )
+	 	            ),
+	            @Server( 
+			       url="https://cars-api-service.herokuapp.com/carservice",
+			       description="live"
+		 	    )
 	     }
 	)
 public class SwaggerConfigurations {
