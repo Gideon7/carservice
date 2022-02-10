@@ -95,7 +95,7 @@ public class CarRestController {
 	    } 
 	  }
 	  
-	  @RequestMapping(value = {"/fetch/brand/{brandName}"}, method = {RequestMethod.GET}, produces = {"application/json"})
+	  @RequestMapping(value = {"/{brandName}"}, method = {RequestMethod.GET}, produces = {"application/json"})
 	  @Operation(summary = "Get All Cars By Brand", description = "This Service Fetches All Cars By Given Brand Name")
 	  @ApiResponses({
 		  @ApiResponse(responseCode = "200", description = "Operation Successful", 
